@@ -1,0 +1,39 @@
+{
+    "name": "conflux-web-core-method",
+    "version": "0.1.22-alpha.0",
+    "description": "Handles the JSON-RPC methods. This package is also internally used by ConfluxWeb.",
+    "repository": "https://github.com/Conflux-Chain/ConfluxWeb/tree/master/packages/conflux-web-core-method",
+    "license": "LGPL-3.0",
+    "main": "dist/conflux-web-core-method.cjs.js",
+    "module": "dist/conflux-web-core-method.esm.js",
+    "browser": "dist/conflux-web3-core-method.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "test:watch": "jest --watchAll",
+        "dtslint": "dtslint types --onlyTestTsNext"
+    },
+    "types": "types/index.d.ts",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "conflux-web-core-subscriptions": "0.1.15-alpha.0",
+        "eventemitter3": "3.1.0",
+        "lodash": "^4.17.11",
+        "rxjs": "^6.4.0"
+    },
+    "devDependencies": {
+        "conflux-web-core": "0.1.22-alpha.0",
+        "conflux-web-core-helpers": "0.1.15-alpha.0",
+        "conflux-web-core-subscriptions": "*",
+        "conflux-web-providers": "0.1.15-alpha.0",
+        "conflux-web-utils": "0.1.15-alpha.0",
+        "definitelytyped-header-parser": "^1.0.1",
+        "dtslint": "0.4.2"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts"
+    ],
+    "gitHead": "5bd1d26ba861ce65bc21c652bb7ec28642a173a5"
+}

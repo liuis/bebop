@@ -1,0 +1,31 @@
+{
+    "name": "conflux-web-core-subscriptions",
+    "version": "0.1.15-alpha.0",
+    "description": "Manages ConfluxWeb subscriptions. This is an internal package.",
+    "repository": "https://github.com/Conflux-Chain/ConfluxWeb/tree/master/packages/conflux-web-core-subscription",
+    "license": "LGPL-3.0",
+    "main": "dist/conflux-web-core-subscriptions.cjs.js",
+    "module": "dist/conflux-web-core-subscriptions.esm.js",
+    "browser": "dist/conflux-web-core-subscriptions.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "test:watch": "jest --watchAll"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "eventemitter3": "^3.1.0",
+        "lodash": "^4.17.11"
+    },
+    "devDependencies": {
+        "conflux-web-core-helpers": "0.1.15-alpha.0",
+        "conflux-web-utils": "0.1.15-alpha.0",
+        "definitelytyped-header-parser": "^1.0.1",
+        "dtslint": "0.4.2"
+    },
+    "files": [
+        "dist"
+    ],
+    "gitHead": "5bd1d26ba861ce65bc21c652bb7ec28642a173a5"
+}
